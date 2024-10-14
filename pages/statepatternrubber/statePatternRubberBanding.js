@@ -1,4 +1,4 @@
-import Konva from 'konva';
+  import Konva from 'konva';
 
 const stage = new Konva.Stage({
   container: 'container',

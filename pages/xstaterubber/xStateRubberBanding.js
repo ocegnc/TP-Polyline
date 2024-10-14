@@ -25,7 +25,7 @@ let rubber;
 
 const rubberBandingMachine = createMachine(
   {
-    /** @xstate-layout N4IgpgJg5mDOIC5QCcCuAjdZkCECGAdhAJYFQB0xEANmAMQCyA8gKoDKAogMIAyAklwDSAbQAMAXUSgADgHtYxAC7FZBKSAAeiAIwBmUeQBsAFgCsADgBMow9oDshu6bvmANCACeOu3fKnj2oamlo4AnMbGurqGAL4x7miY2PhEpBQQyHgA7mmMrJzMAGocYpJIIHIKyqrqWgjGoqbk4aF6xlaGnaKB7l4I5rrNrbqWraG62trBunEJGFi4hCRk5BnZuczs3PxCpeqVSipq5XXaoeSBxnbWdqGGuhGtvYgDQ3qjZxNTlqZx8SAEWQQODqRILFLLKD7eSHGonRAAWkmhnIlj0oUsEVEtwsoTcnkRg1MonMnVCLkMNgmolCsxAYOSSzSlBoYGhVSOtURhnMqPRmIaOPMeOeCGsvLuXTsAXsokxsX+DMWqRWaxyZHZsOOoDqXwulL0UVs5kuousgxGJuR7VMplCzj+MSAA */
+    /** @xstate-layout N4IgpgJg5mDOIC5QCcCuAjdZkCECGAdhAJYFQB0xEANmAMQCyA8gKoDKAogMIAyAklwDSAbQAMAXUSgADgHtYxAC7FZBKSAAeiAIwA2XeQDMxwwCYALNvOiArAA5TdgOwAaEAE8dTg04Cce51Fdc0dtMwBfcLc0TGx8IlIKCGQ8AHdExlZOZgA1DjFJJBA5BWVVdS0EM3Nycztfe10HX0NfJzs3TwRtUW1yJ1N-ZwbzX1Mnc3NI6IwsXEISMnJktIzmdm5+IQL1EqUVNSLKvQMTaqtbB2dOxDs+k90nC-8bUV8p6ZACWQg4dRi5vFFlBdvJ9uUjogALS6G4IGGfAFxBaJSg0MCg0oHCqIEJw7T+fpOUR2GzaPxmXRWRGzZEJJYrdJkTHgw6gSqGcyGcj6fR2OoDTk2CZw0yiUxGGyWbw9MaOMaRSJAA */
     id: "rubberBanding",
     initial: "idle",
     states: {
@@ -72,7 +72,7 @@ const rubberBandingMachine = createMachine(
       // Sauvegarde la ligne
       saveLine: (context, event) => {
         rubber.remove(); // On l'enlève de la couche temporaire
-        rubber.stroke("black"); // On change la couleur
+        rubber.stroke("red"); // On change la couleur
         dessin.add(rubber); // On l'ajoute à la couche de dessin
       }
     },
